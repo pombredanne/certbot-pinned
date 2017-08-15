@@ -47,18 +47,7 @@ setup(
     # pinned deps for 0.17.0
     # from https://github.com/certbot/certbot/blob/912d235466669d516427b5db9997bb92705020f1/certbot-auto#L708
     install_requires = [
-        # This is the flattened list of packages certbot-auto installs. To generate
-        # this, do
-        # `pip install --no-cache-dir -e acme -e . -e certbot-apache -e certbot-nginx`,
-        # and then use `hashin` or a more secure method to gather the hashes.
-        
-        # Hashin example:
-        # pip install hashin
-        # hashin -r dependency-requirements.txt cryptography==1.5.2
-        # sets the new certbot-auto pinned version of cryptography to 1.5.2
         'argparse==1.4.0',
-        # This comes before cffi because cffi will otherwise install an unchecked
-        # version via setup_requires.
         'pycparser==2.14',
         'asn1crypto==0.22.0',
         'cffi==1.10.0',
@@ -87,12 +76,6 @@ setup(
         'zope.event==4.1.0',
         'zope.interface==4.1.3',
         'mock==2.0.0',
-        # Contains the requirements for the letsencrypt package.
-        #
-        # Since the letsencrypt package depends on certbot and using pip with hashes
-        # requires that all installed packages have hashes listed, this allows
-        # dependency-requirements.txt to be used without requiring a hash for a
-        # (potentially unreleased) Certbot package.
         'letsencrypt==0.7.0',
         'certbot==0.17.0',
         'acme==0.17.0',
