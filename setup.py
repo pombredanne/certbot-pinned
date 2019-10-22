@@ -68,7 +68,7 @@ setup(
         'pyRFC3339==1.0',
         'python-augeas==0.5.0',
         'pytz==2015.7',
-        'requests==2.12.1',
+        'requests==2.20.0',
         'six==1.10.0',
         'traceback2==1.4.0',
         'unittest2==1.1.0',
