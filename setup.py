@@ -53,7 +53,7 @@ setup(
         'cffi==1.10.0',
         'ConfigArgParse==0.10.0',
         'configobj==5.0.6',
-        'cryptography==2.0.2',
+        'cryptography==3.2',
         'enum34==1.1.2',
         'funcsigs==1.0.2',
         'idna==2.5',
